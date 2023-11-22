@@ -9,7 +9,7 @@ CREATE TABLE usuario(
     email CHAR(200) NOT NULL,
     senha CHAR(200) NOT NULL
 );
--- tabela de textos
+-- tabela de texto
 CREATE TABLE texto(
     id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     titulo VARCHAR(255) NOT NULL,

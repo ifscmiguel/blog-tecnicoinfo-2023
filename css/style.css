@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+body{
+    background-color: #CCC;
+    margin:0;
+    padding:0;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    background-color: white;
+    min-height:100vh;
+    border:1px solid black;
+}
+
+main, nav{
+    padding:30px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: darkcyan;
+}
+
+nav a:any-link{
+    color:#FFF;
+}
+
+nav a:hover{
+    color:#FF0;
+}
+
+
+
+form{
+    padding:30px;
+    border:1px solid black;
+}
+
+form div{
+    padding: 20px;
+    border-bottom: 1px dotted #FFF;
+}
+
+input[type=text], input[type=password], input[type=number],input[type=date], textarea{
+    padding:10px;
+    width:100%;
+    margin-bottom: 20px;;
+}
+
+textarea{
+    width: 100%;
+    resize: none;
+}
+
+fieldset{
+    border: 2px solid darkcyan;
+    border-radius: 5px;
+}
+
+legend{
+    padding:5px 30px;
+    background-color:darkcyan;
+    color:#CCC;
+    border:2px solid darkcyan;
+    border-radius: 5px;
+}
+
+label{
+    min-width: 100px;
+    display: inline-block;
+}
+
+input[type=submit], input[type=reset], button{
+    background-color:darkcyan;
+    color:#FFF;
+    padding:10px;
+    width:100%;
+    border: 2px solid darkcyan;
+    border-radius: 5px;
+    font-variant: small-caps;
+    transition: background-color 1s;
+}
+input[type=submit]:hover, input[type=reset]:hover, button:hover{
+    background-color:rgb(30, 95, 95);
+}
