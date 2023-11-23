@@ -60,4 +60,29 @@ class Texto{
         return $conn->query("DELETE FROM texto WHERE id=$this->id");
     }
 
+    /**
+     * Retorna o usuario que escreveu o texto
+     */
+    function getUsuario(){
+        if($this->usuario_id){
+            $conn = new Conexao();
+            $stmt = $conn->query("SELECT * FROM usuario WHERE id=$this->usuario_id");
+            $stmt->setFetchMode(\PDO::FETCH_CLASS, '\Blog\Classes\Usuario');
+            return $stmt->fetch();
+        }
+        return new Usuario();
+    }
+
+
+    /**
+     * retorna um array de objetos de texto
+     */
+    static function lista(){
+        $conn = new Conexao();
+        $sql = "SELECT * FROM texto ORDER BY id DESC";
+        $stmt = $conn->query($sql);
+        # array de objetos Texto
+        return $stmt->fetchAll(\PDO::FETCH_CLASS, "\Blog\Classes\Texto");
+    }
+
 }
