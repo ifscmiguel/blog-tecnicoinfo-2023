@@ -6,8 +6,8 @@ use Blog\Classes\Controlador;
 $p = filter_input(INPUT_GET, 'p');
 $c = new Controlador;
 switch ($p) {
-    case 'value':
-        # code...
+    case 'novoUsuario':
+        $c->novoUsuario();
         break;
     
     default:

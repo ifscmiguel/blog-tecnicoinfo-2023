@@ -10,6 +10,10 @@ class Controlador{
         require 'template/template1.php';
     }
 
-
+    # página de cadastro do usuário
+    function novoUsuario(){
+        $page = 'novoUsuario';
+        require 'template/template1.php';
+    }
 
 }

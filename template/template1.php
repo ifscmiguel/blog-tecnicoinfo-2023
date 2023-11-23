@@ -8,7 +8,13 @@
 </head>
 <body>
     <div class="container">
-        <nav>menu</nav>
+        <nav>
+            <a href="index.php">Início</a>
+            <a href="?p=novoUsuario">Novo Usuário</a>
+            <a href="?p=novoTexto">Novo Texto</a>
+            <a href="?p=login">Login</a>
+            <a href="?p=logout">Logout</a>
+        </nav>
         <main>
             <?php require "pages/$page.php";?>
         </main>
