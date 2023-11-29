@@ -1,6 +1,11 @@
 <?php
 namespace Blog\Classes;
 
+/*
+Cada método do controlador, é uma página ou funcionalidade do sistema.
+
+Se for uma página, carrega uma view (pasta pages).
+*/
 class Controlador{
 
     # página inicial
@@ -15,5 +20,8 @@ class Controlador{
         $page = 'novoUsuario';
         require 'template/template1.php';
     }
+
+    # salvar o usuário no bd
+    // TODO
 
 }
