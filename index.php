@@ -1,5 +1,6 @@
 <?php
 require 'autoload.php';
+
 use Blog\Classes\Controlador;
 
 session_start();
@@ -14,7 +15,11 @@ switch ($p) {
     case 'login':
         $c->login();
         break;
-    
+
+    case 'novoTexto':
+        $c->novoTexto();
+        break;
+
     default:
         $c->inicial();
         break;

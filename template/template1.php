@@ -11,7 +11,6 @@
         <nav>
             <a href="index.php">Início</a>
             <a href="?p=novoUsuario">Novo Usuário</a>
-            <a href="?p=novoTexto">Novo Texto</a>
             <?php
             if(isset($_SESSION['id'])){
                 echo '<a href="?p=novoTexto">Novo Texto</a>';
