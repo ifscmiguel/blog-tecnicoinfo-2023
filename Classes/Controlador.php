@@ -61,7 +61,6 @@ class Controlador{
     }
     
     function novoTexto(){
-        $t = new Texto();
-        $t->usuario_id = $_SESSION['id'];
+        
     }
 }

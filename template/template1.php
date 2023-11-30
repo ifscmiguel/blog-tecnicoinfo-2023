@@ -12,8 +12,15 @@
             <a href="index.php">Início</a>
             <a href="?p=novoUsuario">Novo Usuário</a>
             <a href="?p=novoTexto">Novo Texto</a>
-            <a href="?p=login">Login</a>
-            <a href="?p=logout">Logout</a>
+            <?php
+            if(isset($_SESSION['id'])){
+                echo '<a href="?p=novoTexto">Novo Texto</a>';
+                echo '<a href="?p=logout">Logout</a>';
+            }
+            else{
+                echo '<a href="?p=login">Login</a>';
+            }
+            ?>
         </nav>
         <main>
             <?php require "pages/$page.php";?>
