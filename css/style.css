@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: #CCC;
+    background-color:rgb(43, 23, 70);
     margin:0;
     padding:0;
 }
@@ -24,7 +24,7 @@ main, nav{
 nav{
     display: flex;
     justify-content: space-around;
-    background-color: darkcyan;
+    background-color: rgb(134, 75, 212);
 }
 
 nav a:any-link{
@@ -47,7 +47,7 @@ form div{
     border-bottom: 1px dotted #FFF;
 }
 
-input[type=text], input[type=password], input[type=number],input[type=date], textarea{
+input[type=text], input[type=email], input[type=password], input[type=number],input[type=date], textarea{
     padding:10px;
     width:100%;
     margin-bottom: 20px;;
@@ -59,15 +59,15 @@ textarea{
 }
 
 fieldset{
-    border: 2px solid darkcyan;
+    border: 2px solid rgb(134, 75, 212);
     border-radius: 5px;
 }
 
 legend{
     padding:5px 30px;
-    background-color:darkcyan;
+    background-color:rgb(134, 75, 212);
     color:#CCC;
-    border:2px solid darkcyan;
+    border:2px solid rgb(134, 75, 212);
     border-radius: 5px;
 }
 
@@ -77,11 +77,11 @@ label{
 }
 
 input[type=submit], input[type=reset], button{
-    background-color:darkcyan;
+    background-color:rgb(134, 75, 212);
     color:#FFF;
     padding:10px;
     width:100%;
-    border: 2px solid darkcyan;
+    border: 2px solid rgb(134, 75, 212);
     border-radius: 5px;
     font-variant: small-caps;
     transition: background-color 1s;

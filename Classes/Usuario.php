@@ -29,6 +29,25 @@ class Usuario{
     }
 
     /**
+     * buscar um usuário do BD pelo e-mail
+     */
+    function buscarPorEmail($email)
+    {
+        $conn = new Conexao();
+        $aluno = $conn->query("SELECT * FROM usuario WHERE email='$email'")->fetch();
+        if ($aluno) {
+            $this->id = $aluno['id'];
+            $this->nome = $aluno['nome'];
+            $this->email = $aluno['email'];
+            $this->senha = $aluno['senha'];
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
+    /**
      * grava no banco de dados (INSERT)
      */
     function salvar(){
