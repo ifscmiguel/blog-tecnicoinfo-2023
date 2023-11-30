@@ -59,6 +59,13 @@ class Controlador{
         $page = 'login';
         require 'template/template1.php';
     }
+
+    # logout
+    function logout(){
+        session_destroy();
+        header('Location:index.php');
+        exit;
+    }
     
     function novoTexto(){
         # verifica se o user está logado, senão redireciona
@@ -66,7 +73,6 @@ class Controlador{
             header('Location:?p=login');
             exit;
         }
-
         # se enviou o form, salva
         if(filter_input(INPUT_POST,'titulo')){
             $titulo = filter_input(INPUT_POST,'titulo', FILTER_SANITIZE_SPECIAL_CHARS);
@@ -80,9 +86,6 @@ class Controlador{
             header('Location:index.php');
             exit;
         }
-
-
-
         $page = 'novoTexto';
         require 'template/template1.php';
     }

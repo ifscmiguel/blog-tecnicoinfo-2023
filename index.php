@@ -16,6 +16,10 @@ switch ($p) {
         $c->login();
         break;
 
+    case 'logout':
+        $c->logout();
+        break;
+
     case 'novoTexto':
         $c->novoTexto();
         break;
